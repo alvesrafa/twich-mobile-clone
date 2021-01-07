@@ -11,6 +11,8 @@ import {
   StreamHeader,
   StreamAvatar,
   StreamUsername,
+  StreamDescription,
+  StreamCategory,
   TagRow,
   TagView,
   TagText,
@@ -26,6 +28,12 @@ const StreamList: React.FC = () => {
             <StreamAvatar />
             <StreamUsername numberOfLines={1}>raufael</StreamUsername>
           </StreamHeader>
+          <StreamDescription numberOfLines={1}>
+            Next-js treinando
+          </StreamDescription>
+          <StreamCategory numberOfLines={1}>
+            Science & Technology
+          </StreamCategory>
         </StreamRow>
 
         <TagRow>

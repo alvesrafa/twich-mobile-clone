@@ -7,6 +7,7 @@ import Heading from '../../components/Heading';
 import Title from '../../components/Title';
 import CategoryList from '../../components/CategoryList';
 import StreamList from '../../components/StreamList';
+import ChannelList from '../../components/ChannelList';
 
 import { Container, Wrapper, Main } from './styles';
 
@@ -40,14 +41,14 @@ const Following: React.FC = () => {
         render: () => <Title>Keep watching</Title>,
         isTitle: true,
       },
-      { key: 'C3', render: () => <View /> },
+      { key: 'C3', render: () => <StreamList /> },
 
       {
         key: 'OFFLINE_CHANNELS',
         render: () => <Title>Offline channels</Title>,
         isTitle: true,
       },
-      { key: 'C4', render: () => <View /> },
+      { key: 'C4', render: () => <ChannelList /> },
     ];
 
     //Array que contém apenas os indices dos elemtentos com titulos
